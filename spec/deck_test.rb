@@ -25,6 +25,7 @@ Rspec.describe Deck do
         card_2= Card.new("my mind", "what have you lost recently?", :Self)
         deck_0= Deck.new([card_0, card_1, card_2])
         expect(deck_0.count).to eq(3)
+    end
     #give me the cards associated with a given catergory
     it "is able to associate cards to a given category" do
         card_0= Card.new("what is the capital of Alaska?", "Juneau", :Geography)
@@ -37,4 +38,3 @@ Rspec.describe Deck do
         expect(deck_0.cards_in_category(:Pop)).to eq([])
     end
 end
-    
